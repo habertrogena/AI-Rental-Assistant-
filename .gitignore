@@ -30,3 +30,4 @@ Thumbs.db
 
 # Optional: coverage reports (if using Jest later)
 coverage/
+uploads/
