@@ -35,7 +35,7 @@ export async function parseRentalExcel(
 ): Promise<RentalRecord[]> {
   const workbook = xlsx.readFile(filePath);
   const sheetName = workbook.SheetNames.find(
-    (name) => name.trim().toUpperCase() === TARGET_SHEET
+    (name: string) => name.trim().toUpperCase() === TARGET_SHEET
   );
 
   if (!sheetName) {
